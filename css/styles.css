@@ -1,0 +1,96 @@
+
+body {
+/* important because bootstrap's default font family is not Open Sans */
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.box-border {
+    border: 1px solid #DBDBE4;
+    padding: 20px 10px 30px 0px;
+    box-shadow: -3px 3px rgba(189, 189, 189, 0.6);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.card-image {
+    border-radius: 100%;
+    border: 1px solid #1C2155;
+    margin-top: 10px;
+}
+
+.lorem-text {
+    color: #232323;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.title-text {
+    color: #1C2154;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+.horizontal-rule {
+    border-top: 2px solid #DBDBE4;
+    width: 40%;
+    margin-left: 0px;
+    /* fix for IE11 to left align horizontal rule */
+    text-align: left;
+}
+
+a {
+    /* important because bootstrap's default a tag has a text decoration on it */
+    text-decoration: none !important;
+}
+
+.button {
+    border: 1px solid #1C2155;
+    width:100%;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    /* important because on the focus state the color was
+    changing back to bootstrap's default color of light blue */
+    color: #1C2154 !important;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.button:hover {
+    background-color: #1C2255;
+    /* important since the color is important it wants
+     to change the hover color to #1C2154 instead of white */
+    color: #fff !important;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 767px) {
+    .row {
+        /* important in order to over ride bootstraps
+        default margins which is making the edges go up against
+        the side of the browser and can't see the border */
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .horizontal-rule {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .button {
+        width:50%;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .card-image {
+        margin-top: 20px;
+    }
+}
